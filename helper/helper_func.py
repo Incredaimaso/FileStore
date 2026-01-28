@@ -418,9 +418,9 @@ def convert_time(duration_seconds: int) -> str:
 #.........Auto Delete Functions.......#
 #===============================================================#
 
-DEL_MSG = """<b>⚠️ Dᴜᴇ ᴛᴏ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs</b>/n
-<pre> ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b>{time}</b>.
-ғᴏʀᴡᴀʀᴅ ᴛᴏ <a href="https://t.me/{username}">Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs</a> ᴛᴏ sᴀᴠᴇ ɪᴛ! </pre>
+DEL_MSG = """<b>⚠️ Dᴜᴇ ᴛᴏ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs</b>
+<pre>ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b>{time}</b>.
+ғᴏʀᴡᴀʀᴅ ᴛᴏ <a href="https://t.me/{username}">Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs</a> ᴛᴏ sᴀᴠᴇ ɪᴛ!</pre>
 """
 
 #Function for provide auto delete notification message
