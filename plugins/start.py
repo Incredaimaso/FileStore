@@ -161,7 +161,7 @@ async def start_command(client: Client, message: Message):
             return await message.reply("⚠️ Invalid or expired link.")
 
         # 7. Get messages from the specific source channel first
-        temp_msg = await message.reply("Wait A Sec..")
+        temp_msg = await message.reply("𝘊𝘰𝘰𝘬𝘪𝘯𝘨...")
         messages = []
 
         try:
@@ -296,7 +296,7 @@ async def request_command(client: Client, message: Message):
         return
 
     if not is_user_premium: 
-        BUTTON_URL = "https://t.me/hanime_arena/5"
+        BUTTON_URL = "linesorthreads.t.me"
         reply_markup = InlineKeyboardMarkup([
             [InlineKeyboardButton("💎 Upgrade to Premium", url=BUTTON_URL)]
         ])
