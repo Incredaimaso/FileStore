@@ -307,12 +307,12 @@ def force_sub(func):
         photo = client.messages.get('FSUB_PHOTO', '')
         if photo:
             msg = await message.reply_photo(
-                caption="<b>ᴡᴀɪᴛ ᴀ sᴇᴄᴏɴᴅ.....</b>", 
+                caption="<b>𝘊𝘰𝘰𝘬𝘪𝘯𝘨...</b>", 
                 photo=photo
             )
         else:
             msg = await message.reply(
-                "<code><b>ᴡᴀɪᴛ ᴀ sᴇᴄᴏɴᴅ.....</b></code>"
+                "<code><b>𝘊𝘰𝘰𝘬𝘪𝘯𝘨...</b></code>"
             )
         user_id = message.from_user.id
         statuses = await check_subscription(client, user_id)
@@ -367,7 +367,7 @@ def force_sub(func):
         from_link = message.text.split(" ")
         if len(from_link) > 1:
             try_again_link = f"https://t.me/{client.username}/?start={from_link[1]}"
-            buttons.append(InlineKeyboardButton("🔄 Try Again", url=try_again_link))
+            buttons.append(InlineKeyboardButton("𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!", url=try_again_link))
 
         # Organize buttons in rows of 1 for better readability
         buttons_markup = InlineKeyboardMarkup([[button] for button in buttons])
@@ -418,7 +418,10 @@ def convert_time(duration_seconds: int) -> str:
 #.........Auto Delete Functions.......#
 #===============================================================#
 
-DEL_MSG = """<b>This File is deleting automatically in <a href="https://t.me/{username}">{time}</a>.. Forward in your Saved Messages..!</b>"""
+DEL_MSG = """<b>⚠️ Dᴜᴇ ᴛᴏ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs</b>/n
+<pre> ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b>{time}</b>.
+ғᴏʀᴡᴀʀᴅ ᴛᴏ <a href="https://t.me/{username}">Sᴀᴠᴇᴅ Mᴇssᴀɢᴇs</a> ᴛᴏ sᴀᴠᴇ ɪᴛ! </pre>
+"""
 
 #Function for provide auto delete notification message
 async def auto_del_notification(bot_username, msg, delay_time, transfer): 
