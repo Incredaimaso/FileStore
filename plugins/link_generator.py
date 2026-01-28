@@ -89,7 +89,7 @@ async def batch(client: Client, message: Message):
     string = f"get-{f_msg_id * abs(source_channel_id)}-{s_msg_id * abs(source_channel_id)}"
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 sʜᴀʀᴇ ᴜʀʟ", url=f'https://telegram.me/share/url?url={link}')]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🇴 🇳 🇬 🇴 🇮 🇳 🇬 ", url=f'http://Ongoing_Anime_Eng_Dubs.t.me')]])
     await second_message.reply_text(f"<blockquote>✓ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʙᴀᴛᴄʜ ʟɪɴᴋ</blockquote>\n\n<code>{link}</code>", quote=True, reply_markup=reply_markup)
 
 #===============================================================#
@@ -176,5 +176,6 @@ async def nbatch(client: Client, message: Message):
     ])
     
     await first_message.reply_text(f"<blockquote>✓ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʙᴀᴛᴄʜ ʟɪɴᴋ</blockquote>\n\n<code>{link}</code>", quote=True, reply_markup=reply_markup)    
+
 
 
